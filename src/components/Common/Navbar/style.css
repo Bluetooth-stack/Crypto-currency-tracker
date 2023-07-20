@@ -35,7 +35,7 @@
 .linkContainer {
   /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 1.5rem;
   transition: 0.3s ease-out;
@@ -85,6 +85,7 @@
 .burgerMenu {
   display: none;
 }
+
 
 @media screen and (max-width: 786px) {
   .linkContainer {
@@ -168,7 +169,9 @@
   }
 
   .themeSwitch{
-    position: relative;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.2rem;
   }
 
 }

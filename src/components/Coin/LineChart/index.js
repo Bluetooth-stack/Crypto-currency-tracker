@@ -24,10 +24,7 @@ function LineGraph({ chartData, priceType, currency, multiAxis }) {
                 ticks: {
                     // Include a currency sign in the ticks
                     callback: function (value, index, ticks) {
-                        if (priceType === 'prices')
-                            return currency + value.toLocaleString();
-                        else
-                            return currency + reduceNumberLength(value);
+                        return currency + reduceNumberLength(value);
                     }
                 }
             },
@@ -38,10 +35,7 @@ function LineGraph({ chartData, priceType, currency, multiAxis }) {
                 ticks: {
                     // Include a currency sign in the ticks
                     callback: function (value, index, ticks) {
-                        if (priceType === 'prices')
-                            return currency + value.toLocaleString();
-                        else
-                            return currency + reduceNumberLength(value);
+                        return currency + reduceNumberLength(value);
                     }
                 }
             },

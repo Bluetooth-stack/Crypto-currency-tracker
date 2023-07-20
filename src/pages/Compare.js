@@ -40,7 +40,7 @@ function Compare() {
       const prices1 = await getCoinPrices(crypto1, Object.keys(currency)[0], e.target.value, priceType)
       const prices2 = await getCoinPrices(crypto2, Object.keys(currency)[0], e.target.value, priceType)
       if (prices1 && prices2) {
-        settingChartData(setChartData, prices1, null, prices2, crypto1Data.name, crypto2Data.name);
+        settingChartData(setChartData, prices1, null, prices2);
         console.log('prices fetched');
         setLoading(false);
       }
@@ -71,7 +71,7 @@ function Compare() {
         const prices1 = await getCoinPrices(crypto1, Object.keys(currency)[0], days, priceType)
         const prices2 = await getCoinPrices(crypto2, Object.keys(currency)[0], days, priceType)
         if (prices1 && prices2) {
-          settingChartData(setChartData, prices1, null, prices2, crypto1Data.name, crypto2Data.name);
+          settingChartData(setChartData, prices1, null, prices2);
           console.log('prices fetched');
           setLoading(false);
         }
@@ -98,7 +98,7 @@ function Compare() {
           const prices1 = await getCoinPrices(crypto1, Object.keys(currency)[0], days, priceType)
           const prices2 = await getCoinPrices(crypto2, Object.keys(currency)[0], days, priceType)
           if (prices1 && prices2) {
-            settingChartData(setChartData, prices1, null, prices2, crypto1Data.name, crypto2Data.name);
+            settingChartData(setChartData, prices1, null, prices2);
             console.log('crypto2 changed');
             setLoading(false);
           }
@@ -121,7 +121,7 @@ function Compare() {
           const prices1 = await getCoinPrices(crypto1, Object.keys(currency)[0], days, priceType)
           const prices2 = await getCoinPrices(crypto2, Object.keys(currency)[0], days, priceType)
           if (prices1 && prices2) {
-            settingChartData(setChartData, prices1, null, prices2, crypto1Data.name, crypto2Data.name);
+            settingChartData(setChartData, prices1, null, prices2);
             console.log('crypto1 changed');
             setLoading(false);
           }
@@ -143,7 +143,7 @@ function Compare() {
       const prices1 = await getCoinPrices(crypto1, Object.keys(currency)[0], days, type)
       const prices2 = await getCoinPrices(crypto2, Object.keys(currency)[0], days, type)
       if (prices1 && prices2) {
-        settingChartData(setChartData, prices1, null, prices2, crypto1Data.name, crypto2Data.name);
+        settingChartData(setChartData, prices1, null, prices2);
         console.log('prices fetched');
         setLoading(false);
       }

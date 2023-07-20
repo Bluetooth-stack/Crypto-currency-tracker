@@ -5,9 +5,31 @@ import Button from '../Common/Button'
 import iphone from '../../images/iphone..png'
 import character from '../../images/3d-character.png'
 import { motion } from 'framer-motion'
+import { toast } from 'react-toastify';
 
 function Main() {
+
     const navigate = useNavigate();
+
+    function onshare(){
+        if(navigator){
+            if(navigator.share){
+                navigator.share({
+                    text: "Crypto's is for keep track of crypto currency market, check it out!",
+                    url:'https://cryptos-track-your-crypto.netlify.app/',
+                    title: "Crypto's"
+                })
+            }
+            else{
+                navigator.clipboard.writeText('https://cryptos-track-your-crypto.netlify.app/');
+                toast.success('Link copied to clipBoard!')
+            }
+        }
+        else{
+            toast.error("Oppss! Looks like browers doesn't support.")
+        }
+    }
+
     return (
         <div className='main-container'>
             <div className='left-info'>
@@ -55,19 +77,21 @@ function Main() {
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
                 >
-                    <Button text={'Dashboard'} handleClick={() => {navigate('/dashboard')}} />
-                    <Button text={'Share'} outline={true} />
+                    <Button text={'Dashboard'} handleClick={() => { navigate('/dashboard') }} />
+
+                    <Button text={'Share'} outline={true} handleClick={onshare} />
+
                 </motion.div>
             </div>
 
             <div className='right-poster'>
                 <motion.img src={iphone} alt='iphone' className='phone'
-                    initial={{ y: -10 }}
-                    animate={{ y: 10 }}
+                    initial={{ y: -28 }}
+                    animate={{ y: 28 }}
                     transition={{
                         type: 'smooth',
                         repeatType: 'mirror',
-                        duration: 2,
+                        duration: 1,
                         repeat: Infinity,
                     }}
                 />

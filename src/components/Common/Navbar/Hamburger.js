@@ -18,7 +18,7 @@ export default function TemporaryDrawer() {
 
 
   return (
-    <div>
+    <div className='burgerSlideList'>
 
       <Button onClick={() => { setState(true) }}> <MenuIcon className='menuIcon' /> </Button>
       <Drawer className='menuContainer' anchor={"right"} open={state}
@@ -26,11 +26,14 @@ export default function TemporaryDrawer() {
 
         <CloseIcon className='closeMenu' onClick={() => { setState(false) }} />
         <div className='menuList'>
+          <div className='themeSwitch'>
+            <ThemeSwitch />
+          </div>
+
           <NavLink className='drawerlink' to='/'><ChaletIcon /> Home</NavLink>
           <NavLink className='drawerlink' to='/compare'><CompareArrowsIcon /> Compare</NavLink>
           <NavLink className='drawerlink' to='/watchlist'><ViewListIcon /> WatchList</NavLink>
           <NavLink className='drawerlink' to='/dashboard'><SpaceDashboardIcon /> Dashboard</NavLink>
-          <ThemeSwitch />
         </div>
 
       </Drawer>

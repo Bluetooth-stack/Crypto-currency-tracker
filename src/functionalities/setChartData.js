@@ -1,14 +1,13 @@
 import { getDateForChart } from "./getDateForChart"
 
-export const settingChartData = (setChartData, prices1, price_change_percentage_24h, prices2, label1, label2) => {
-    console.log(label1, label2);
+export const settingChartData = (setChartData, prices1, price_change_percentage_24h, prices2) => {
     if (prices2) {
         setChartData(
             {
                 labels: prices1.map((date) => (getDateForChart(date[0]))),
                 datasets: [
                     {
-                        label: label1 ? label1 : 'Crypto 1',
+                        label: 'Crypto 1',
                         data: prices1.map((price) => (price[1])),
                         borderColor: '#dfdf28',
                         borderWidth: 2,
@@ -18,7 +17,7 @@ export const settingChartData = (setChartData, prices1, price_change_percentage_
                         yAxisID: 'crypto_1',
                     },
                     {
-                        label: label2 ? label2 : 'Crypto 2',
+                        label: 'Crypto 2',
                         data: prices2.map((price) => (price[1])),
                         borderColor: '#3a80e9',
                         borderWidth: 2,

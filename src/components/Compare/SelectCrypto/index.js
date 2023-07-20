@@ -4,11 +4,15 @@ import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { getAllCoins } from '../../../functionalities/getAllCoins';
-import './style.css'
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+import './style.css';
 
 export default function SelectCrypto({ crypto1, crypto2, handleChange }) {
 
     let [allCoins, setAllCoins] = useState([]);
+
+    const navigate = useNavigate();
 
     const theme = createTheme({
         palette: {
@@ -29,6 +33,8 @@ export default function SelectCrypto({ crypto1, crypto2, handleChange }) {
         }
         catch (error) {
             console.log(error);
+            toast.error(`${error.message} while fetching data`);
+            navigate('*');
         }
     }
 

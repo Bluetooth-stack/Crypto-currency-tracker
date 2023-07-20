@@ -5,7 +5,7 @@ import { getAllCoins } from '../functionalities/getAllCoins';
 import SelectViewCurrency from '../components/Dashboard/SelectViewCurrency';
 import Loader from '../components/Common/Loader';
 import Grid from '../components/Dashboard/Grid';
-import { toast } from 'react-toastify'
+import { toast } from 'react-toastify';
 
 function Watchlist() {
   let [filteredCoin, setFilteredCoin] = useState([]);

@@ -1,5 +1,4 @@
 import './App.css';
-// import Footer from './components/Common/Footer';
 import Navbar from './components/Common/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -35,7 +34,6 @@ function App() {
         <Route path='/coins/:id' element={<CoinPage />}></Route>
         <Route path='*' element={<Errorpage />}></Route>
       </Routes>
-
     </div>
   );
 }
