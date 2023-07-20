@@ -1,0 +1,38 @@
+.btn{
+    background-color: var(--orange);
+    outline: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    min-width: 114px;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.btn:hover{
+    box-shadow: 0 0 14px rgb(253, 195, 88), inset 0 0 8px rgb(230, 172, 66);
+}
+
+.borderedBtn{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--orange);
+    padding: 0.5rem 1rem;
+    min-width: 114px;
+    color: var(--orange);
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.borderedBtn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}

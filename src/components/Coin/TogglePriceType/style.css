@@ -1,0 +1,13 @@
+.toggleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .toggleButton{
+        font-size: 0.48rem !important;
+    }
+}

@@ -1,0 +1,181 @@
+.cardContainer{
+    width: 280px;
+    background: var(--lightGrey);
+    border: 2px solid var(--lightGrey);
+    border-radius: 0.68rem;
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.greenHover:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+    border-color: var(--green);
+}
+
+.redHover:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.05);
+    border-color: var(--red);
+}
+
+.topContainer{
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coinLogo{
+    height: 3.2rem;
+    width: 3.2rem;
+}
+
+.coinName{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.symbol{
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.name{
+    text-transform: capitalize;
+    color: var(--darkGrey);
+    font-weight: light;
+    font-size: 0.86rem;
+    margin: 0;
+}
+
+.starIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    z-index: 100;
+}
+
+.greenStar{
+    border: 0.15rem solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+}
+
+.greenStar:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.redStar{
+    border: 0.15rem solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+}
+
+.redStar:hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.changeInfo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1.6rem 0;
+}
+
+.percentage{
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    padding: 0.3rem 0.5rem;
+    text-align: center;
+    color: var(--green);
+    font-weight: 600;
+    font-size: 1rem;
+    min-width: 55px;
+}
+
+.inRed{
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.percentage:hover, .upIcon:hover{
+    transition: 0.4s ease-out;
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.inRed:hover, .downIcon:hover{
+    transition: 0.4s ease-out;
+    background-color: var(--red);
+    color: var(--black);
+}
+
+.upIcon{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    color: var(--green);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downIcon{
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coinPrice{
+    margin: 0 0.24rem;
+}
+
+.additional{
+    color: var(--darkGrey);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 370px) {
+    .cardContainer{
+        width: 200px;
+    }
+    .upIcon,.downIcon{
+        display: none;
+    }
+    .additional{
+        font-size: 0.55rem;
+    }
+}

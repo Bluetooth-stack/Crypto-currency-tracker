@@ -1,0 +1,22 @@
+.scrollUpBtn{
+    position: fixed;
+    bottom: 0.8rem;
+    right: 1.2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 166, 0, 0.733);
+    background-color: #ffa80779;
+    margin: 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 190, 69);
+    transition: 0.4s ease-out;
+    z-index: 600;
+}
+
+.scrollUpBtn:hover{
+    transform: scale(0.93);
+}

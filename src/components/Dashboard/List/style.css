@@ -1,0 +1,189 @@
+.listRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0 1.2rem;
+  margin: 2.2rem 0;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  transition: 0.3s ease-out;
+}
+
+.redHover:hover {
+  background-color: var(--lightGrey);
+  border-radius: 1rem;
+  transform: scale(1.015);
+  box-shadow: inset 0 0 2px var(--red), 0 0 4px var(--red);
+}
+
+.greenHover:hover {
+  background-color: var(--lightGrey);
+  border-radius: 1rem;
+  transform: scale(1.01);
+  box-shadow: inset 0 0 2px var(--green), 0 0 4px var(--green);
+}
+
+.listRow td {
+  text-align: left;
+  width: 14%;
+}
+
+.coinImageContainer {
+  width: 3rem !important;
+  margin-right: 2.2rem;
+}
+
+.centerAlign {
+  text-align: center;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.mobileMarket-td {
+  display: none;
+}
+
+.starContainer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1028px) {
+  .tdIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .td-coinVolume {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .coinLogo {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+  .symbol {
+    font-size: 1.2rem;
+  }
+  .name {
+    font-size: 0.8rem;
+  }
+  .percentage {
+    font-size: 0.8rem;
+  }
+  .coinPrice {
+    font-size: 1rem;
+  }
+  .coinImageContainer {
+    margin-right: 0.8rem;
+  }
+  .percentage {
+    min-width: 40px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .listRow {
+    padding: 0;
+  }
+  .redHover:hover {
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1.016);
+  }
+
+  .greenHover:hover {
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1.016);
+  }
+  .desktopMarket-td {
+    display: none;
+  }
+  .mobileMarket-td {
+    display: block;
+  }
+  .mobileMarket-td .additional {
+    font-size: 0.7rem;
+  }
+
+  .percentage {
+    min-width: 38px;
+  }
+
+  .coinLogo {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .symbol {
+    font-size: 0.95rem;
+  }
+  .name {
+    font-size: 0.75rem;
+  }
+  .percentage {
+    font-size: 0.7rem;
+  }
+  .coinPrice {
+    font-size: 0.9rem;
+  }
+  .coinImageContainer {
+    margin-right: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .coinLogo {
+    height: 1.9rem;
+    width: 1.9rem;
+  }
+  .symbol {
+    font-size: 0.84rem;
+  }
+  .name {
+    font-size: 0.66rem;
+  }
+  .percentage {
+    font-size: 0.62rem;
+  }
+  .coinPrice {
+    font-size: 0.76rem;
+  }
+  .coinImageContainer {
+    margin-right: 0.05rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .coinLogo {
+    height: 1.64rem;
+    width: 1.64rem;
+  }
+  .symbol {
+    font-size: 0.73rem;
+  }
+  .name {
+    font-size: 0.6rem;
+  }
+  .percentage {
+    font-size: 0.58rem;
+  }
+  .coinPrice {
+    font-size: 0.7rem;
+  }
+  .coinImageContainer {
+    margin-right: 0;
+  }
+  .percentage {
+    padding: 0.1rem;
+    min-width: 36px;
+  }
+}

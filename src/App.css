@@ -1,0 +1,125 @@
+.searchFlex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto 1.6rem;
+}
+.coinDataContainer {
+  display: block;
+  width: 94%;
+  margin: 1rem 1.6rem;
+}
+
+.coinDataList {
+  margin: 0.5rem auto;
+}
+
+.coin-chart {
+  margin: 0.4rem auto 1rem auto;
+}
+
+.daysAndPriceContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.compareContainer{
+  margin: 0.5rem 1.6rem;
+}
+
+.allselectContainer{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.emptyWatchList{
+  height: 50dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyWatchList h1{
+  color: var(--grey);
+}
+
+.errorPage{
+  height: 84dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorPage h1{
+  margin: 0;
+  color: var(--orange);
+}
+.errorPage p{
+  margin: 0;
+  color: var(--grey);
+  font-weight: 600;
+}
+
+.errorCharacter{
+  height: 320px;
+  margin: 1rem auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  .coinDataContainer {
+    margin: 0.8rem;
+  }
+  .emptyWatchList h1{
+    font-size: 1.2rem;
+  }
+  .errorPage h1{
+    font-size: 1.2rem;
+  }
+  .errorPage p{
+    font-size: 0.9rem;
+  }
+  .errorCharacter{
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .daysAndPriceContainer{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .emptyWatchList h1{
+    font-size: 0.8rem;
+  }
+  .errorPage p{
+    font-size: 0.5rem;
+  }
+  .errorPage h1{
+    font-size: 0.8rem;
+  }
+  .errorCharacter{
+    height: 220px;
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .coinDataContainer {
+    margin: 0.66rem;
+  }
+  .coinDataList {
+    overflow-y: auto;
+  }
+  .coinDataList::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.selectHolder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#demo-simple-select-label{
+    color: #b1b0b0;
+    font-size:0.84rem;
+    margin-bottom: 0.24rem;
+}
+#demo-simple-select{
+    margin: 0.4rem;
+    padding: 0;
+    padding-left: 0.15rem;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 400px) {
+    #demo-simple-select-label{
+        top: 3px;
+        left: 0;
+        text-align: left;
+        font-size:0.7rem 
+    }
+    #demo-simple-select{
+        min-width: 80px;
+    }
+}

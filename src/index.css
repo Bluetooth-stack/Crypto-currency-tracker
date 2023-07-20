@@ -1,0 +1,76 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plaster&family=Prosto+One&display=swap");
+
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Plaster', cursive;
+font-family: 'Prosto One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --white: #fffdfd;
+  --black: #111;
+  --orange: #ffa808;
+  --red: #ee2525;
+  --green: #2fe046;
+  --lightGrey: #f0eded;
+  --grey: #b1b0b0;
+  --darkGrey: #575757;
+  --yellow: #dfdf28;
+  --blue: #3a80e9;
+}
+
+[data-theme='dark']{
+  --white:  #111;
+  --black: #fffdfd;
+  --lightGrey: #252424;
+  --grey: #b1b0b0;
+  --darkGrey: #f0eded;
+}
+
+*{
+  transition: 0.26s ease-in-out;
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+::selection {
+  background-color: lightgray;
+  color: rgb(0, 187, 131);
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(7, 202, 202);
+  transition: 0.5s ease-out;
+}
+
+img { 
+  -webkit-user-drag: none; 
+  -khtml-user-drag: none; 
+  -moz-user-drag: none; 
+  -o-user-drag: none; 
+}
+

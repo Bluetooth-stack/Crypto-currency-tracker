@@ -1,0 +1,26 @@
+.selectCurrency-container{
+  margin-top: 0.5rem;
+}
+
+#demo-simple-select-autowidth-label {
+  color: #b1b0b0;
+  font-size: 1rem;
+  top:0px;
+  left: 0;
+}
+#formControl {
+  margin: 0.4rem;
+  padding: 0;
+  padding-left: 0.15rem;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 400px) {
+  #demo-simple-select-autowidth-label {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  #formControl {
+    min-width: 80px;
+  }
+}

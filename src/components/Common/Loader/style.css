@@ -1,0 +1,17 @@
+.boxContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 84dvh;
+  position: absolute;
+  z-index: 100000;
+}
+.box {
+  width: 2.8rem;
+  height: 2.8rem;
+  /* background: var(--orange); */
+  background: transparent;
+  border: 0.2rem solid var(--orange);
+  box-shadow: 0 0 16px rgb(248, 187, 73);
+}

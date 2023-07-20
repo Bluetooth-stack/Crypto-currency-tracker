@@ -1,0 +1,40 @@
+.searchboxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.4rem;
+    padding: 0.66rem 1.2rem;
+    color: var(--grey);
+    background-color: var(--lightGrey);
+    width: 80%;
+    margin: 1.5rem auto;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.inputBox{
+    border: none;
+    width: 100%;
+    font-family: 'Inter';
+    background-color: var(--lightGrey);
+    font-size: 1rem;
+    color: var(--darkGrey);
+    font-weight: 500;
+    padding: 0.2rem 0.46rem;
+}
+
+.inputBox:focus{
+    outline: none;
+
+}
+
+@media screen and (max-width: 400px) {
+    .searchboxContainer{
+        font-size: 0.8rem;
+        padding: 0.66rem 0.8rem;
+    }
+    .inputBox{
+        font-size: 0.8rem;
+        padding: 0.2rem 0.3rem;
+    }
+}

@@ -1,0 +1,85 @@
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin: 2rem;
+}
+
+.listTable {
+  width: 85%;
+  display: block;
+  margin: 0.5rem auto;
+}
+
+.listTableBody{
+  width: 100%;
+  display: block;
+}
+
+.exceptionContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exceptionContainer h2{
+  font-size: 2rem;
+  font-family: 'Inter';
+  color: var(--darkGrey);
+}
+
+@media screen and (max-width: 1000px) {
+  .listTable {
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .listTable {
+    width: 98%;
+  }
+  .exceptionContainer h2{
+    font-size: 1.8rem;
+  }
+  .gridContainer{
+    justify-content: space-around;
+    gap: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .listTable {
+    width: auto;
+  }
+  .listTableBody{
+    width: auto;
+  }
+  .exceptionContainer h2{
+    font-size: 1.4rem;
+  }
+  .exceptionContainer .btn{
+    font-size: 0.8rem;
+    min-width: 100px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+  .listTableBody{
+    width: auto;
+    overflow-y: auto;
+  }
+  .exceptionContainer h2{
+    font-size: 1rem;
+  }
+  .exceptionContainer .btn{
+    font-size: 0.6rem;
+    min-width: 80px;
+  }
+}
+
