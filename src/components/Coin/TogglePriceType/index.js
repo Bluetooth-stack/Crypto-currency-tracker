@@ -22,18 +22,23 @@ export default function TogglePriceType({priceType, handleToggle}) {
           sx={{
             '& .Mui-selected': {
               color: 'var(--orange) !important',
+              background: '#4e4e4e36'
             },
-            borderColor: 'var(--orange)',
+            borderColor: 'var(--red)',
             border: 'unset !important',
             '& .MuiToggleButtonGroup-grouped': {
-              border: '1px soli important',
-              // borderColor: 'unset',
-              color: 'var(--orange)',
+              border: '1px solid important',
+              borderColor: 'unset',
+              color: 'var(--red)',
               fontSize: '0.7rem',
+              fontWeight: 600,
               padding: '0.5rem'
             },
             '& .MuiToggleButton-standard': {
               color: 'var(--orange)'
+            },
+            '& .MuiToggleButton-standard:hover': {
+              background: '#4e4e4e36'
             }
           }}
 

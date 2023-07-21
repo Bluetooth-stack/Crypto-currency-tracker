@@ -7,6 +7,7 @@ import Loader from '../components/Common/Loader';
 import Grid from '../components/Dashboard/Grid';
 import { toast } from 'react-toastify';
 
+
 function Watchlist() {
   let [filteredCoin, setFilteredCoin] = useState([]);
   let [loading, setLoading] = useState(true);
@@ -16,17 +17,14 @@ function Watchlist() {
 
   useEffect(() => {
     checkStorage()
-  }, [currency, filteredCoin])
+  }, [currency])
 
   function checkStorage(){
     if (localStorage.getItem('watchList')) {
       const ids = JSON.parse(localStorage.getItem('watchList'));
-      // console.log(exist);
-      if (ids.length) {
+     if (ids.length) {
         getData(ids)
-        console.log(currency);
       } else {
-        setFilteredCoin([]);
         setLoading(false)
       }
     }
@@ -41,6 +39,7 @@ function Watchlist() {
       const data = await getAllCoins(Object.keys(currency)[0]);
       if (data) {
         setFilteredCoin(data.filter((coin) => (watchListArray.includes(coin.id))));
+        console.log('data fetched');
         setLoading(false);
       }
     }

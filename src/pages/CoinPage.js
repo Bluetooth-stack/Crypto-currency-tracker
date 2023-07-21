@@ -32,6 +32,8 @@ function CoinPage() {
         }
     }, [id, currency, days, priceType])
 
+    
+
     async function getData() {
         try {
             const data = await getCoinsDataApi(id);
