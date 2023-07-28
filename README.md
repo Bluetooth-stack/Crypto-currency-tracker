@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Crypto's
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Crypto's is a platform dedicated to crypto investors who want to get more information about the crypto currensies they are interested in to invest and compare them with other currencies available in market.
 
-## Available Scripts
+* If you want to clone it to you local system to do some modification use 'npm install' command in your terminal and all the dependencies will get installed locally.
 
-In the project directory, you can run:
+### Features and functionalities
 
-### `npm start`
+- This webapp is fully responsive to use in any device and user can toggle between dark and light modes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  
+![Screenshot 2023-07-28 153036](https://github.com/Bluetooth-stack/Crypto-currency-tracker/assets/80689111/f61834e0-6bb4-4ddc-a261-0cd9f9bf66aa)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+- To view and search various crypto currencies available in market user can visit dashboard where it can search any currency in mid directly and the list will get filtered.
+- User can also choose in which country currency he/she want to get the value of crypto currencies.
+- User get to choose the view of coins i.e, grid view or list view.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Screenshot 2023-07-28 153143](https://github.com/Bluetooth-stack/Crypto-currency-tracker/assets/80689111/35b742bf-b30e-4410-8b73-fa57583e8e68)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- You have some coins you need to compare among with their price, market cap or total volume, we got you cover.
+- Visit the compare section/page where you can choose between the country currency you want the value in, the cryptos you want to compare and the the day ranges you want to get details of.
+- Changes will be shown in graphs with there up and down and you can toogle between price/market-cap/total-volume.
+- Details of coins shall be in bottom.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  ![Screenshot 2023-07-28 153225](https://github.com/Bluetooth-stack/Crypto-currency-tracker/assets/80689111/2e68d8de-53ef-4ee3-ab73-184fbe91af1f)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- If there are some crypto you watch frequently or those are your fevorite, you can add them to your watch-list, so you can keep track of those.
+- You can add or remove these coins.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Screenshot 2023-07-28 153336](https://github.com/Bluetooth-stack/Crypto-currency-tracker/assets/80689111/7768dc29-002f-471f-a61c-36d6441314fd)
 
-### Code Splitting
+  
+- Each card/list of coin is clickable, upon clicking which you will redirected to that particular coin page where you can view details of that coin in graphs and can see the coin information at bottom.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Screenshot 2023-07-28 153414](https://github.com/Bluetooth-stack/Crypto-currency-tracker/assets/80689111/18f5e072-db00-40cf-9e71-45faa02f32bd)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
