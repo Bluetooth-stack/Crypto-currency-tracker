@@ -84,12 +84,12 @@ function List({ coins, viewCurrency, indx }) {
                     coins.price_change_percentage_24h > 0 ?
                         <td className='changeInfo' onClick={() => { navigate(`/coins/${coins.id}`) }}>
                             <div className='percentage'>{coins.price_change_percentage_24h.toFixed(2)} %</div>
-                            <div className='upIcon tdIcon'><TrendingUpIcon /></div>
+                            <div className='upIcon tdIcon'><TrendingUpIcon className='tdIcon' /></div>
                         </td> :
 
                         <td className='changeInfo ' onClick={() => { navigate(`/coins/${coins.id}`) }}>
                             <div className='percentage inRed'>{coins.price_change_percentage_24h.toFixed(2)} %</div>
-                            <div className='downIcon tdIcon'><TrendingDownIcon /></div>
+                            <div className='downIcon tdIcon'><TrendingDownIcon className='tdIcon' /></div>
                         </td>
                 }
             </Tooltip>
